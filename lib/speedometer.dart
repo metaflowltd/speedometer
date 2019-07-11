@@ -58,7 +58,6 @@ class _SpeedOMeterState extends State<SpeedOMeter>  with TickerProviderStateMixi
     }
     
     reloadData(double value){
-        print(value);
         newVal = value;
         percentageAnimationController.forward(from: 0.0);
     }
@@ -84,7 +83,7 @@ class _SpeedOMeterState extends State<SpeedOMeter>  with TickerProviderStateMixi
                                         startPercent: this.widget
                                             .highlightStart,
                                         endPercent: this.widget.highlightEnd,
-                                        width: 40.0
+                                        width: 20.0
                                     )
                                 ),
                             ),
